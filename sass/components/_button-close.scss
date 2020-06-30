@@ -1,0 +1,30 @@
+.button-close-field {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: $primary-white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  &:hover .button-close-icon,
+  &:focus .button-close-icon {
+    fill: $primary-accent-color;
+  }
+}
+.button-close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #000000;
+}

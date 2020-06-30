@@ -1,0 +1,52 @@
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  //   justify-content: space-between;
+  @extend %list;
+  margin: -15px;
+}
+.clients .section-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $secondary-text-color;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+.clients-list-item {
+  margin: 15px;
+  width: calc((100% - 4 * 15px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+}
+.clients-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    border: 1px solid $primary-accent-color;
+  }
+}
+.icon-clients {
+  fill: $icon-color-main;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-logo:hover .icon-clients,
+.clients-logo:focus .icon-clients {
+  fill: $primary-accent-color;
+}

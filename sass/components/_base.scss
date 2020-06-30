@@ -1,0 +1,15 @@
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $main-font-style;
+  letter-spacing: 0.03em;
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

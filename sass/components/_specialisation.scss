@@ -1,0 +1,49 @@
+.specialisation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.specialisation-list {
+  display: flex;
+  @extend %list;
+}
+.specialisation-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.specialisation-list-item .overlay {
+  position: relative;
+}
+.specialisation .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $secondary-text-color;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.specialisation .item {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 370px;
+  height: 70px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $primary-white-color;
+  background-color: $hero-bg-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+.image {
+  display: block;
+}
