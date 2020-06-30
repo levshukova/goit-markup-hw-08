@@ -1341,16 +1341,18 @@ img {
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 767px) {
-  .gallery .element:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery .element {
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .gallery .element:not(:last-child) {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
+    margin-bottom: 30px;
   }
 }
 
