@@ -2,8 +2,6 @@
   @extend %container;
 }
 .gallery {
-  // display: flex;
-  // flex-wrap: wrap;
   @extend %list;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -23,31 +21,29 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 350px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
-
-    // @media screen and (min-width: 768px) {
-    //   width: calc((100% - 4 * 15px) / 2);
-    //   margin: 15px;
-    // }
   }
-
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
-// .gallery > .element:nth-last-child(-n + 3) {
-//   margin-bottom: 0;
+// .element .thumb {
+//   height: 294px;
 // }
-
+.element .image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  // object-fit: cover;
+  // // object-position: top;
+}
 .element .link {
   @extend %link;
 }
@@ -67,6 +63,15 @@
   line-height: 2;
   text-transform: none;
   letter-spacing: 0.06em;
+}
+
+.subtitle.short {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .gallery .type {
   margin-top: 0;
@@ -110,6 +115,7 @@
   color: $primary-white-color;
   font-size: 18px;
   line-height: 1.56;
+  white-space: normal;
 }
 .link:hover .overlay,
 .link:focus .overlay {

@@ -6,6 +6,10 @@
     display: grid;
     align-items: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .subscription-form-input {
   margin-top: 20px;

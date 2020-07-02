@@ -192,29 +192,50 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contacts .item {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-
-.contacts .item {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts .item {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .contacts .item:hover, .contacts .item:focus {
+    color: #2196f3;
   }
 }
 
@@ -450,6 +471,7 @@ img {
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
+  z-index: 999;
   padding: 50px 15px;
 }
 
@@ -855,10 +877,6 @@ img {
   text-transform: uppercase;
 }
 
-.image {
-  display: block;
-}
-
 .team {
   background-color: #f5f4fa;
 }
@@ -917,10 +935,24 @@ img {
   }
 }
 
+.team-member .thumb {
+  height: 320px;
+}
+
+@media (min-width: 768px) {
+  .team-member .thumb {
+    height: 260px;
+  }
+}
+
 .team-member .image {
-  max-width: 960px;
-  min-width: 320px;
-  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .team-description {
@@ -1109,16 +1141,37 @@ img {
 .footer-main-container {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-tablet {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-main-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1145,12 +1198,17 @@ img {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
-  margin-bottom: 60px;
 }
 
 .address-container .address {
   margin-top: 0;
   margin-bottom: 9px;
+}
+
+@media screen and (max-width: 1199px) {
+  .address-container {
+    margin-bottom: 60px;
+  }
 }
 
 .address-link {
@@ -1227,6 +1285,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .subscription-form-input {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1287,7 +1353,19 @@ img {
 }
 
 .filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 65px;
+  }
 }
 
 .filter .list {
@@ -1299,9 +1377,25 @@ img {
   padding: 0;
 }
 
-.filter .list .list-item:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .filter .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.filter .list .filter-item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .filter .filter-item {
+    margin-bottom: 15px;
+  }
+  .filter .filter-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 .button-filter {
@@ -1335,6 +1429,13 @@ img {
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
+.button-filter.active {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (min-width: 768px) {
   .gallery {
     display: -webkit-box;
@@ -1361,19 +1462,29 @@ img {
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .gallery .element {
-    width: 350px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .gallery .element:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery .element {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery .element {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+.element .image {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .element-content {
@@ -1392,6 +1503,15 @@ img {
   line-height: 2;
   text-transform: none;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subtitle.short {
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .gallery .type {
@@ -1441,6 +1561,7 @@ img {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.56;
+  white-space: normal;
 }
 
 .link:hover .overlay,

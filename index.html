@@ -153,7 +153,12 @@
               <div class="overlay">
                 <img
                   class="image"
-                  src="./images/desktop-optimized.jpg"
+                  srcset="
+                    ./images/desktop.jpg    1x,
+                    ./images/desktop@2x.jpg 2x,
+                    ./images/desktop@3x.jpg 3x
+                  "
+                  src="./images/desktop.jpg"
                   alt="Ноутбук серого цвета"
                   width="370"
                   height="294"
@@ -165,7 +170,12 @@
               <div class="overlay">
                 <img
                   class="image"
-                  src="./images/mobile-optimized.jpg"
+                  srcset="
+                    ./images/mobile.jpg    1x,
+                    ./images/mobile@2x.jpg 2x,
+                    ./images/mobile@3x.jpg 3x
+                  "
+                  src="./images/mobile.jpg"
                   alt="Смартфон"
                   width="370"
                   height="294"
@@ -177,7 +187,12 @@
               <div class="overlay">
                 <img
                   class="image"
-                  src="./images/design-optimized.jpg"
+                  srcset="
+                    ./images/design.jpg    1x,
+                    ./images/design@2x.jpg 2x,
+                    ./images/design@3x.jpg 3x
+                  "
+                  src="./images/design.jpg"
                   alt="Монитор серо-черного цвета"
                   width="370"
                   height="294"
@@ -194,11 +209,18 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-member">
-              <img
-                class="image"
-                src="./images/nikolay-kucherenko.jpg"
-                alt="Фото Николая Кучеренко"
-              />
+              <div class="thumb">
+                <img
+                  class="image"
+                  srcset="
+                    ./images/nikolai.jpg    1x,
+                    ./images/nikolai@2x.jpg 2x,
+                    ./images/nikolai@3x.jpg 3x
+                  "
+                  src="./images/nikolai.jpg"
+                  alt="Фото Николая Кучеренко"
+                />
+              </div>
               <div class="team-description">
                 <h3 class="subtitle">Николай Кучеренко</h3>
                 <p class="position">Product Designer</p>
@@ -258,14 +280,20 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-member">
-              <img
-                class="image"
-                src="./images/marta-stuart-optimized.jpg"
-                alt="Фото Ольги Ивановой"
-                width="270"
-                height="260"
-              />
+              <div class="thumb">
+                <img
+                  class="image"
+                  srcset="
+                    ./images/olga.jpg    1x,
+                    ./images/olga@2x.jpg 2x,
+                    ./images/olga@3x.jpg 3x
+                  "
+                  src="./images/olga.jpg"
+                  alt="Фото Ольги Ивановой"
+                />
+              </div>
               <div class="team-description">
                 <h3 class="subtitle">Ольга Иванова</h3>
                 <p class="position">Frontend Developer</p>
@@ -327,13 +355,18 @@
             </li>
 
             <li class="team-member">
-              <img
-                class="image"
-                src="./images/robert-jakis-optimized.jpg"
-                alt="Фото Андрея Шевченко"
-                width="270"
-                height="260"
-              />
+              <div class="thumb">
+                <img
+                  class="image"
+                  srcset="
+                    ./images/andrey.jpg    1x,
+                    ./images/andrey@2x.jpg 2x,
+                    ./images/andrey@3x.jpg 3x
+                  "
+                  src="./images/andrey.jpg"
+                  alt="Фото Андрея Шевченко"
+                />
+              </div>
               <div class="team-description">
                 <h3 class="subtitle">Андрей Шевченко</h3>
                 <p class="position">Marketing</p>
@@ -395,13 +428,18 @@
             </li>
 
             <li class="team-member">
-              <img
-                class="image"
-                src="./images/martin-doe-optimized.jpg"
-                alt="Фото Ивана Николаева"
-                width="270"
-                height="260"
-              />
+              <div class="thumb">
+                <img
+                  class="image"
+                  srcset="
+                    ./images/ivan.jpg    1x,
+                    ./images/ivan@2x.jpg 2x,
+                    ./images/ivan@3x.jpg 3x
+                  "
+                  src="./images/ivan.jpg"
+                  alt="Фото Ивана Николаева"
+                />
+              </div>
               <div class="team-description">
                 <h3 class="subtitle">Иван Николаев</h3>
                 <p class="position">UI Designer</p>
@@ -518,80 +556,80 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-main-container">
-        <div class="footer-tablet">
-          <div class="footer-left-part">
-            <a class="logo" href="index.html">
-              <p class="logo-footer"><span class="accent">Web</span> Studio</p>
-            </a>
-            <address class="address-container">
-              <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-              <a href="mailto:info@example.com" class="address-link"
-                >info@example.com</a
-              ><br />
-              <a href="tel:+380991111111" class="address-link"
-                >+38 099 111 11 11</a
-              >
-            </address>
-          </div>
-          <div class="socials">
-            <p class="text">присоединяйтесь</p>
-            <ul class="list socials-list-footer">
-              <li class="socials-item-footer button-socials-footer">
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  class="socials-link-footer"
-                >
-                  <svg class="icon-socials-footer" width="20" height="20">
-                    <use
-                      href="./images/symbol-defs-opt.svg#icon-instagram-footer"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-item-footer button-socials-footer">
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  class="socials-link-footer"
-                >
-                  <svg class="icon-socials-footer" width="20" height="20">
-                    <use
-                      href="./images/symbol-defs-opt.svg#icon-twitter-footer"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-item-footer button-socials-footer">
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  class="socials-link-footer"
-                >
-                  <svg class="icon-socials-footer" width="20" height="20">
-                    <use
-                      href="./images/symbol-defs-opt.svg#icon-facebook-footer"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-item-footer button-socials-footer">
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  class="socials-link-footer"
-                >
-                  <svg class="icon-socials-footer" width="20" height="20">
-                    <use
-                      href="./images/symbol-defs-opt.svg#icon-linkedin-footer"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="footer-main-container container">
+        <!-- <div class="footer-tablet"> -->
+        <div class="footer-left-part">
+          <a class="logo" href="index.html">
+            <p class="logo-footer"><span class="accent">Web</span> Studio</p>
+          </a>
+          <address class="address-container">
+            <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@example.com" class="address-link"
+              >info@example.com</a
+            ><br />
+            <a href="tel:+380991111111" class="address-link"
+              >+38 099 111 11 11</a
+            >
+          </address>
         </div>
+        <div class="socials">
+          <p class="text">присоединяйтесь</p>
+          <ul class="list socials-list-footer">
+            <li class="socials-item-footer button-socials-footer">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="socials-link-footer"
+              >
+                <svg class="icon-socials-footer" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs-opt.svg#icon-instagram-footer"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item-footer button-socials-footer">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="socials-link-footer"
+              >
+                <svg class="icon-socials-footer" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs-opt.svg#icon-twitter-footer"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item-footer button-socials-footer">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="socials-link-footer"
+              >
+                <svg class="icon-socials-footer" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs-opt.svg#icon-facebook-footer"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item-footer button-socials-footer">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="socials-link-footer"
+              >
+                <svg class="icon-socials-footer" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs-opt.svg#icon-linkedin-footer"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
         <div class="subscription-container">
           <b class="text">Подпишитесь на рассылку</b>
           <form method="POST" class="subscription-form">

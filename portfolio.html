@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header-portfolio">
       <div class="container">
         <div class="logo-container">
           <a href="index.html" class="logo"
@@ -85,19 +85,19 @@
         <!-- Filter -->
         <div class="container filter">
           <ul class="list">
-            <li class="list-item">
+            <li class="filter-item">
               <button type="button" class="button-filter active">Все</button>
             </li>
-            <li class="list-item">
+            <li class="filter-item">
               <button type="button" class="button-filter">Веб-сайты</button>
             </li>
-            <li class="list-item">
+            <li class="filter-item">
               <button type="button" class="button-filter">Приложения</button>
             </li>
-            <li class="list-item">
+            <li class="filter-item">
               <button type="button" class="button-filter">Дизайн</button>
             </li>
-            <li class="list-item">
+            <li class="filter-item">
               <button type="button" class="button-filter">Маркетинг</button>
             </li>
           </ul>
@@ -108,13 +108,41 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-techno-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-mobile-techno.jpg    1x,
+                          ./images/portfolio-mobile-techno@2x.jpg 2x,
+                          ./images/portfolio-mobile-techno@3x.jpg 3x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio-tablet-techno.jpg    1x,
+                          ./images/portfolio-tablet-techno@2x.jpg 2x,
+                          ./images/portfolio-tablet-techno@3x.jpg 3x
+                        "
+                        media="(max-width: 1199px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio-desktop-techno.jpg    1x,
+                          ./images/portfolio-desktop-techno@2x.jpg 2x,
+                          ./images/portfolio-desktop-techno@3x.jpg 3x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+
+                      <img
+                        src="./images/portfolio-desktop-techno.jpg"
+                        alt="Ноутбук"
+                      />
+                    </picture>
+                  </div>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -133,13 +161,41 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-poster-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-mobile-poster.jpg    1x,
+                          ./images/portfolio-mobile-poster@2x.jpg 2x,
+                          ./images/portfolio-mobile-poster@3x.jpg 3x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio-tablet-poster.jpg    1x,
+                          ./images/portfolio-tablet-poster@2x.jpg 2x,
+                          ./images/portfolio-tablet-poster@3x.jpg 3x
+                        "
+                        media="(max-width: 1199px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio-desktop-poster.jpg    1x,
+                          ./images/portfolio-desktop-poster@2x.jpg 2x,
+                          ./images/portfolio-desktop-poster@3x.jpg 3x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+
+                      <img
+                        src="./img/portfolio-desktop-poster.jpg"
+                        alt="Два игрока в баскетбол"
+                      />
+                    </picture>
+                  </div>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -150,7 +206,9 @@
                   </div>
                 </div>
                 <div class="element-content">
-                  <h2 class="subtitle">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="subtitle short">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="type">Дизайн</p>
                 </div>
               </a>
@@ -158,13 +216,41 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-restaurant-seafood-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-mobile-seafood.jpg    1x,
+                          ./images/portfolio-mobile-seafood@2x.jpg 2x,
+                          ./images/portfolio-mobile-seafood@3x.jpg 3x
+                        "
+                        media="(max-width: 767px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio-tablet-seafood.jpg    1x,
+                          ./images/portfolio-tablet-seafood@2x.jpg 2x,
+                          ./images/portfolio-tablet-seafood@3x.jpg 3x
+                        "
+                        media="(max-width: 1199px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio-desktop-seafood.jpg    1x,
+                          ./images/portfolio-desktop-seafood@2x.jpg 2x,
+                          ./images/portfolio-desktop-seafood@3x.jpg 3x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+
+                      <img
+                        src="./img/portfolio-desktop-seafood.jpg"
+                        alt="Лого ресторана морепродуктов"
+                      />
+                    </picture>
+                  </div>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -183,13 +269,39 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-prime-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-mobile-headphones.jpg    1x,
+                        ./images/portfolio-mobile-headphones@2x.jpg 2x,
+                        ./images/portfolio-mobile-headphones@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-tablet-headphones.jpg    1x,
+                        ./images/portfolio-tablet-headphones@2x.jpg 2x,
+                        ./images/portfolio-tablet-headphones@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-desktop-headphones.jpg    1x,
+                        ./images/portfolio-desktop-headphones@2x.jpg 2x,
+                        ./images/portfolio-desktop-headphones@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="./img/portfolio-desktop-headphones.jpg"
+                      alt="Наушники чёрного цвета"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -208,13 +320,39 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-boxes-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-mobile-boxes.jpg    1x,
+                        ./images/portfolio-mobile-boxes@2x.jpg 2x,
+                        ./images/portfolio-mobile-boxes@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-tablet-boxes.jpg    1x,
+                        ./images/portfolio-tablet-boxes@2x.jpg 2x,
+                        ./images/portfolio-tablet-boxes@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-desktop-boxes.jpg    1x,
+                        ./images/portfolio-desktop-boxes@2x.jpg 2x,
+                        ./images/portfolio-desktop-boxes@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="./img/portfolio-desktop-boxes.jpg"
+                      alt="Две коробки белого и коричнего цвета"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -233,13 +371,39 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-inspiration-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-mobile-inspiration.jpg    1x,
+                        ./images/portfolio-mobile-inspiration@2x.jpg 2x,
+                        ./images/portfolio-mobile-inspiration@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-tablet-inspiration.jpg    1x,
+                        ./images/portfolio-tablet-inspiration@2x.jpg 2x,
+                        ./images/portfolio-tablet-inspiration@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-desktop-inspiration.jpg    1x,
+                        ./images/portfolio-desktop-inspiration@2x.jpg 2x,
+                        ./images/portfolio-desktop-inspiration@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="./img/portfolio-desktop-inspiration.jpg"
+                      alt=" Монитор iMac"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -258,13 +422,39 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-limited-edition-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-mobile-limited.jpg    1x,
+                        ./images/portfolio-mobile-limited@2x.jpg 2x,
+                        ./images/portfolio-mobile-limited@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-tablet-limited.jpg    1x,
+                        ./images/portfolio-tablet-limited@2x.jpg 2x,
+                        ./images/portfolio-tablet-limited@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-desktop-limited.jpg    1x,
+                        ./images/portfolio-desktop-limited@2x.jpg 2x,
+                        ./images/portfolio-desktop-limited@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="./img/portfolio-desktop-limited.jpg"
+                      alt="Открытый журнал"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -283,13 +473,39 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-lab-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-mobile-lab.jpg    1x,
+                        ./images/portfolio-mobile-lab@2x.jpg 2x,
+                        ./images/portfolio-mobile-lab@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-tablet-lab.jpg    1x,
+                        ./images/portfolio-tablet-lab@2x.jpg 2x,
+                        ./images/portfolio-tablet-lab@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-desktop-lab.jpg    1x,
+                        ./images/portfolio-desktop-lab@2x.jpg 2x,
+                        ./images/portfolio-desktop-lab@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="./img/portfolio-desktop-lab.jpg"
+                      alt="Бирка белого цвета"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
@@ -308,13 +524,39 @@
             <li class="element">
               <a href="#" class="link">
                 <div class="gallery-overlay">
-                  <img
-                    src="./images/portfolio-growing-business-optimized.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                    class="image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-mobile-app.jpg    1x,
+                        ./images/portfolio-mobile-app@2x.jpg 2x,
+                        ./images/portfolio-mobile-app@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-tablet-app.jpg    1x,
+                        ./images/portfolio-tablet-app@2x.jpg 2x,
+                        ./images/portfolio-tablet-app@3x.jpg 3x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio-desktop-app.jpg    1x,
+                        ./images/portfolio-desktop-app@2x.jpg 2x,
+                        ./images/portfolio-desktop-app@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="./img/portfolio-desktop-app.jpg"
+                      alt="Ноутбук серого цвета"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="text">
                       Технокряк это современная площадка распространения
