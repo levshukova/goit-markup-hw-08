@@ -1,7 +1,6 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  //   justify-content: space-between;
   @extend %list;
   margin: -15px;
 }

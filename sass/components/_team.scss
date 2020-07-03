@@ -16,7 +16,6 @@
   }
 }
 .team-list {
-  //   display: flex;
   @extend %list;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -53,7 +52,6 @@
   }
 }
 .team-member .image {
-  // margin: 0 auto;
   display: block;
   width: 100%;
   height: 100%;
