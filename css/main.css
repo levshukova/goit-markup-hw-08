@@ -86,17 +86,23 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .menu-container {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 84px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .site-nav {
-    margin-right: 305px;
     margin-left: 85px;
   }
 }
@@ -323,6 +329,12 @@ img {
 
 .logo .accent {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    margin-right: 81px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
